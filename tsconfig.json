@@ -15,6 +15,10 @@
       "my-lib": [
         "projects/my-lib/src/public-api.ts",
         // "dist/my-lib" // for testing prod/npm build of lib
+      ],
+      "my-lib/secondary": [
+        "projects/my-lib/secondary/src/public-api.ts",
+        // "dist/my-lib/secondary" // for testing prod/npm build of lib's secondary entry point
       ]
     },
     "declaration": false,
