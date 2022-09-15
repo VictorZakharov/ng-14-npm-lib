@@ -127,9 +127,25 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/my-lib/test.ts",
+            "main": "projects/my-lib/src/test.ts",
             "tsConfig": "projects/my-lib/tsconfig.spec.json",
             "karmaConfig": "projects/my-lib/karma.conf.js"
+          }
+        }
+      }
+    },
+    "my-lib-secondary": {
+      "projectType": "library",
+      "root": "projects/my-lib/secondary",
+      "sourceRoot": "projects/my-lib/secondary/src",
+      "prefix": "lib",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/my-lib/secondary/src/test.ts",
+            "tsConfig": "projects/my-lib/secondary/tsconfig.spec.json",
+            "karmaConfig": "projects/my-lib/secondary/karma.conf.js"
           }
         }
       }
